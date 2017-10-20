@@ -1,0 +1,279 @@
+* {
+	width: 100%;
+	background-attachment: fixed;
+}
+
+/*--------------------estilo del menu--------------------*/
+
+body {
+	margin: -1px;
+	display: inline-block;
+	background-image: url(Oto&ntilde.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position:;
+	background-attachment: fixed;
+	
+}
+
+.header{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	height: 200px;
+	background: rgb(11, 11, 28);
+	background-image: url(fondo004.jpg);
+	background-size: cover;
+}
+
+.header2 {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-image: url(fondo004.jpg);
+	
+}
+
+header h1 {
+	margin: auto;
+	padding-right: 6px;
+	width: 50%;
+	color: aliceblue;
+	text-align: center;
+	font-size: 26px;
+	float: right;
+	overflow: hidden;
+	line-height: 200px;
+	text-shadow: 2px 4px #000
+}
+#icono {
+	margin: 0;
+	width: 200px;
+	height: 100px;
+	max-height: 1000px;
+	margin-top: 50px;
+	border-radius: 50px;
+	box-shadow: 1px 5px rgba(0, 0, 0, 0.64);
+	
+}
+
+.wraper {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*-------------------La animacion del header-------------------*/
+@media screen and (max-width: 481px) {
+	header {
+		width: 100%;
+		height: 100px;
+		overflow: hidden;
+	}
+	
+	#icono {
+		margin-top: 0%;
+		margin-left: 35%;
+		margin-right: 35%;
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	header h1 {
+		width: 100%;
+		font-size: 20px;
+		line-height: 50px;
+		text-align: center;
+		padding: 0;
+		float: left;
+		color: #f2f2f2f2;
+		overflow: hidden;
+	}
+}
+/*-----------------Estilo del texto y banner-----------------*/
+
+.banner {
+	top: -25%;
+	text-align: center;
+}
+
+.bienvenida {
+	top: 19%;
+	width: 100%;
+	margin: 0;
+	color: #ccc;
+}
+
+.contenedor {
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+.contenedor ul {
+	margin: 0;
+	display: flex;
+	padding: 0;
+	width: 600%;
+	animation: cambio 30s infinite alternate;
+	animation-timing-function: ease-in;
+}
+
+.contenedor li {
+	list-style: none;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+}
+
+.contenedor img {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0; }
+	10% {margin-left: 0; }
+	
+	15% {margin-left: -100%; }
+	25% {margin-left: -100%; }
+	
+	30% {margin-left: -200%; }
+	40% {margin-left: -200%; }
+	
+	45% {margin-left: -300%; }
+	55% {margin-left: -300%; }
+	
+	60% {margin-left: -400%; }
+	80% {margin-left: -400%; }
+	
+	85% {margin-left: -500%; }
+	100% {margin-left: -500%; }
+	
+}
+
+.txt-1 {
+	top: 35%;
+	left: 30%;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+}
+/*estilo de la informacion*/
+
+.contxt {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 23px;
+}
+
+#info1 {
+	background: rgba(8, 40, 118, 0.62);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 2%;
+}
+
+#info1 h1 {
+	font-family: "arial";
+	color: #f2f2f2
+	
+}
+
+#info1 p {
+	font: message-box cursive;
+	width: 100%;
+	color: aliceblue;
+}
+
+/*---------------SECCION DE PARTICIPANTES---------------*/
+
+.contener {
+	width: 100%;
+	height: 30%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #333;
+	color: #fff;
+	}
+
+.contenedor_tarjeta {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	line-height: 10%;
+}
+
+.contenedor_tarjeta a {
+	display: inline-block;
+	width: 200px;
+	height: 300px:
+}
+
+.contenedor_tarjeta:hover figure {
+	-webkit-transform:perspective(600px) rotateY(180deg);
+	-ms-transform:perspective(600px) rotateY(180deg);
+	-o-transform:perspective(600px) rotateY(180deg);
+	transform:perspective(600px) rotateY(180deg);
+}
+
+.contenedor_tarjeta:hover figure img {
+	filter: blur(2px);
+}
+
+figure {
+	width: 200px;
+	height: 205px;
+	margin: 0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	transition: all ease .5s;
+}
+
+figure .frontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+figure .trasera {
+	background: rgba(0, 0, 0, 0.31);
+	position: absolute;
+	text-align: center;
+	margin: 0px;
+	top: 0;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+
+figure .trasera p {
+	width: 100%;
+	line-height: 20px;
+}
